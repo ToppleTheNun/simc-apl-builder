@@ -27,7 +27,7 @@ specifiers:
   c8: ^7.12.0
   cookie: ^0.5.0
   cross-env: ^7.0.3
-  cypress: ^10.11.0
+  cypress: ^12.0.0
   eslint: ^8.26.0
   eslint-config-prettier: ^8.5.0
   eslint-plugin-cypress: ^2.12.1
@@ -68,7 +68,7 @@ devDependencies:
   '@faker-js/faker': 7.6.0
   '@remix-run/dev': 1.8.1_2xci7q36jvzst7pajt5xfjg3gi
   '@remix-run/eslint-config': 1.8.1_3d7osmpeeoyqkoluqnkoj2u33y
-  '@testing-library/cypress': 8.0.7_cypress@10.11.0
+  '@testing-library/cypress': 8.0.7_cypress@12.0.1
   '@testing-library/dom': 8.19.0
   '@testing-library/jest-dom': 5.16.5
   '@testing-library/react': 13.4.0_biqbaboplfbrettd7655fr4n2y
@@ -85,7 +85,7 @@ devDependencies:
   c8: 7.12.0
   cookie: 0.5.0
   cross-env: 7.0.3
-  cypress: 10.11.0
+  cypress: 12.0.1
   eslint: 8.29.0
   eslint-config-prettier: 8.5.0_eslint@8.29.0
   eslint-plugin-cypress: 2.12.1_eslint@8.29.0
@@ -2050,7 +2050,7 @@ packages:
       defer-to-connect: 2.0.1
     dev: true
 
-  /@testing-library/cypress/8.0.7_cypress@10.11.0:
+  /@testing-library/cypress/8.0.7_cypress@12.0.1:
     resolution: {integrity: sha512-3HTV725rOS+YHve/gD9coZp/UcPK5xhr4H0GMnq/ni6USdtzVtSOG9WBFtd8rYnrXk8rrGD+0toRFYouJNIG0Q==}
     engines: {node: '>=12', npm: '>=6'}
     peerDependencies:
@@ -2058,7 +2058,7 @@ packages:
     dependencies:
       '@babel/runtime': 7.20.6
       '@testing-library/dom': 8.19.0
-      cypress: 10.11.0
+      cypress: 12.0.1
     dev: true
 
   /@testing-library/dom/8.19.0:
@@ -3622,9 +3622,9 @@ packages:
     resolution: {integrity: sha512-DJR/VvkAvSZW9bTouZue2sSxDwdTN92uHjqeKVm+0dAqdfNykRzQ95tay8aXMBAAPpUiq4Qcug2L7neoRh2Egw==}
     dev: true
 
-  /cypress/10.11.0:
-    resolution: {integrity: sha512-lsaE7dprw5DoXM00skni6W5ElVVLGAdRUUdZjX2dYsGjbY/QnpzWZ95Zom1mkGg0hAaO/QVTZoFVS7Jgr/GUPA==}
-    engines: {node: '>=12.0.0'}
+  /cypress/12.0.1:
+    resolution: {integrity: sha512-I1Ag5RsPEINfUlQtV6xwkd6ktJuu5QGiKZ3pFa/IXjcyCY6I7CH3gOz0juLOhg/LXOPrQtZH35ulcWDQohyyEA==}
+    engines: {node: ^14.0.0 || ^16.0.0 || >=18.0.0}
     hasBin: true
     requiresBuild: true
     dependencies:
@@ -9904,7 +9904,7 @@ packages:
     engines: {node: '>= 0.8'}
 
   /verror/1.10.0:
-    resolution: {integrity: sha1-OhBcoXBTr1XW4nDB+CiGguGNpAA=}
+    resolution: {integrity: sha512-ZZKSmDAEFOijERBLkmYfJ+vmk3w+7hOLYDNkRCuRuMJGEmqYNCNLyBBFwWKVMhfwaEF3WOd0Zlw86U/WC/+nYw==}
     engines: {'0': node >=0.6.0}
     dependencies:
       assert-plus: 1.0.0
