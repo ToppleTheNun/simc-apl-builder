@@ -1,10 +1,10 @@
-import { Navbar } from "../src/components/Navbar";
+import { Navbar } from "../components/Navbar";
 import { Box, Container, Flex, Text } from "@chakra-ui/react";
 import {
   useMainContentBg,
   useMainContentColor,
-} from "../src/hooks/useColorModeValues";
-import { Footer } from "../src/components/Footer";
+} from "../hooks/useColorModeValues";
+import { Footer } from "../components/Footer";
 
 export default function NotFound() {
   return (
