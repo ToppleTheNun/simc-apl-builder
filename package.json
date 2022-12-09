@@ -13,6 +13,7 @@
     "@chakra-ui/react": "^2.4.3",
     "@emotion/react": "^11",
     "@emotion/styled": "^11",
+    "@sentry/nextjs": "^7.24.2",
     "framer-motion": "^6",
     "i18next": "^22.1.4",
     "i18next-resources-to-backend": "^1.1.1",
