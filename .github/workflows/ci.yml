@@ -21,7 +21,7 @@ jobs:
         uses: ToppleTheNun/action-pnpm-install@v1
 
       - name: 🔬 Lint
-        run: pnpm lint
+        run: pnpm run lint
 
   typecheck:
     name: ʦ TypeScript
@@ -37,7 +37,7 @@ jobs:
         uses: ToppleTheNun/action-pnpm-install@v1
 
       - name: 🔎 Type check
-        run: pnpm typecheck
+        run: pnpm run typecheck
 
   vitest:
     name: ⚡ Vitest
@@ -53,7 +53,7 @@ jobs:
         uses: ToppleTheNun/action-pnpm-install@v1
 
       - name: ⚡ Run vitest
-        run: pnpm test --coverage
+        run: pnpm run test --coverage
 
   cypress:
     name: ⚫️ Cypress
@@ -72,10 +72,11 @@ jobs:
         uses: ToppleTheNun/action-pnpm-install@v1
 
       - name: 🌳 Cypress run
-        uses: cypress-io/github-action@v3
+        uses: cypress-io/github-action@v5
         with:
-          start: pnpm dev
+          start: pnpm run dev
           wait-on: "http://localhost:8811"
+          install-command: pnpm install
         env:
           PORT: "8811"
 
@@ -93,4 +94,4 @@ jobs:
         uses: ToppleTheNun/action-pnpm-install@v1
 
       - name: 🏠 Run build
-        run: pnpm build
+        run: pnpm run build
