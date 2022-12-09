@@ -12,6 +12,7 @@ specifiers:
   eslint: 8.29.0
   eslint-config-next: 13.0.6
   eslint-config-prettier: ^8.5.0
+  eslint-plugin-simple-import-sort: ^8.0.0
   framer-motion: ^6
   i18next: ^22.1.4
   i18next-resources-to-backend: ^1.1.1
@@ -45,6 +46,7 @@ devDependencies:
   eslint: 8.29.0
   eslint-config-next: 13.0.6_ha6vam6werchizxrnqvarmz2zu
   eslint-config-prettier: 8.5.0_eslint@8.29.0
+  eslint-plugin-simple-import-sort: 8.0.0_eslint@8.29.0
   lint-staged: 13.1.0
   prettier: 2.8.1
 
@@ -2569,6 +2571,14 @@ packages:
       resolve: 2.0.0-next.4
       semver: 6.3.0
       string.prototype.matchall: 4.0.8
+    dev: true
+
+  /eslint-plugin-simple-import-sort/8.0.0_eslint@8.29.0:
+    resolution: {integrity: sha512-bXgJQ+lqhtQBCuWY/FUWdB27j4+lqcvXv5rUARkzbeWLwea+S5eBZEQrhnO+WgX3ZoJHVj0cn943iyXwByHHQw==}
+    peerDependencies:
+      eslint: '>=5.0.0'
+    dependencies:
+      eslint: 8.29.0
     dev: true
 
   /eslint-scope/7.1.1:

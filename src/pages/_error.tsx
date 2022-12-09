@@ -17,8 +17,8 @@
  */
 
 import * as Sentry from "@sentry/nextjs";
-import NextErrorComponent from "next/error";
 import { NextPageContext } from "next";
+import NextErrorComponent from "next/error";
 import { ComponentProps } from "react";
 
 const CustomErrorComponent = ({

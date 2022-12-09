@@ -1,10 +1,17 @@
-import { Box, Button, Flex, Stack, Text, useColorMode } from "@chakra-ui/react";
-import { useTranslation } from "react-i18next";
-import {
-  useHeaderFooterBg,
-  useHeaderFooterColor,
-} from "../hooks/useColorModeValues";
 import { MoonIcon, SunIcon } from "@chakra-ui/icons";
+import {
+  Box,
+  Button,
+  Flex,
+  Link,
+  Stack,
+  Text,
+  useColorMode,
+} from "@chakra-ui/react";
+import NextLink from "next/link";
+import { useTranslation } from "react-i18next";
+
+import { useDarkLightColor,useLightDarkBg } from "../hooks/useColorModeValues";
 
 export const Navbar = () => {
   const { colorMode, toggleColorMode } = useColorMode();
@@ -17,11 +24,13 @@ export const Navbar = () => {
       minH={16}
       alignItems="center"
       justifyContent="space-between"
-      bg={useHeaderFooterBg()}
-      color={useHeaderFooterColor()}
+      bg={useLightDarkBg()}
+      color={useDarkLightColor()}
     >
       <Box>
-        <Text>simc APL Builder</Text>
+        <NextLink href="/" legacyBehavior passHref>
+          <Link>simc APL Builder</Link>
+        </NextLink>
       </Box>
 
       <Flex alignItems="center">

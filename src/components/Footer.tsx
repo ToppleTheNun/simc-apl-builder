@@ -1,12 +1,13 @@
 import { Box, Container, Stack, Text } from "@chakra-ui/react";
+
 import {
-  useHeaderFooterBg,
-  useHeaderFooterColor,
+  useDarkLightColor,
+  useLightDarkBg,
 } from "../hooks/useColorModeValues";
 
 export const Footer = () => {
   return (
-    <Box as="footer" bg={useHeaderFooterBg()} color={useHeaderFooterColor()}>
+    <Box as="footer" bg={useLightDarkBg()} color={useDarkLightColor()}>
       <Container
         as={Stack}
         maxW="6xl"
